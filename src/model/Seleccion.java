@@ -42,6 +42,4 @@ public class Seleccion {
     public void setRanking(int ranking) {
         this.ranking = ranking;
     }
-
-
 }
