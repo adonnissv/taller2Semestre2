@@ -1,16 +1,24 @@
 package model;
 
+        import java.util.ArrayList;
+        import java.util.List;
+
 public class Seleccion {
     private int id;
     private String nombrePais;
     private int ranking;
+    private List<Jugador> jugadores;
 
     public Seleccion(int id, String nombrePais, int ranking) {
         this.id = id;
         this.nombrePais = nombrePais;
         this.ranking = ranking;
+        this.jugadores = new ArrayList<>();
     }
 
+    public List<Jugador> getJugadores() {
+        return jugadores;
+    }
     public int getId() {
         return id;
     }
@@ -34,5 +42,6 @@ public class Seleccion {
     public void setRanking(int ranking) {
         this.ranking = ranking;
     }
+
 
 }
